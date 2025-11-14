@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Adotar — Lar dos Peludos</title>
+<link rel="stylesheet" href="/assets/css/style.css"></head>
+<body>
+<header class="site-header">
+  <div class="container"><a class="logo" href="/">Lar dos Peludos</a>
+  <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+  <nav class="main-nav"><ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/pages/about.html">Sobre</a></li>
+    <li><a href="/pages/adopt.html" class="active">Adotar</a></li>
+    <li><a href="/pages/tips.html">Dicas</a></li>
+    <li><a href="/pages/contact.html">Contato</a></li>
+  </ul></nav></div>
+</header>
+
+<main class="container">
+  <h1>Animais para Adoção</h1>
+  <p>Use os filtros ou busque pelo nome para encontrar o seu novo companheiro.</p>
+
+  <div class="controls">
+    <input id="searchInput" type="text" placeholder="Buscar por nome..." />
+    <select id="filterType">
+      <option value="">Todos</option>
+      <option value="cachorro">Cachorro</option>
+      <option value="gato">Gato</option>
+    </select>
+  </div>
+
+  <div class="grid animals-grid" id="animalsGrid">
+    <!-- cards gerados por JS -->
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container"><small>&copy; 2025 Lar dos Peludos</small></div></footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
