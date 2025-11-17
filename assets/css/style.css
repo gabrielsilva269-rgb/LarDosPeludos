@@ -131,11 +131,7 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   text-align: center; /* centraliza textos */
 }
 /* Centraliza a hero section */
-.hero-inner {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 
 /* Centraliza os cards da home */
 
