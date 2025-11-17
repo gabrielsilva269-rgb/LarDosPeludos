@@ -162,8 +162,4 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   text-align: center;
   align-items: center;
 }
-img {
-  margin-left: auto;
-  margin-right: auto;
-}
 
