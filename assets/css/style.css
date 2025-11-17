@@ -147,11 +147,7 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   justify-items: center;
   text-align: center;
 }
-h1, h2, h3, p, article, section {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .card.small,
 .animal-card {
   margin: 0 auto;
