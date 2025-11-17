@@ -88,6 +88,33 @@ html,body{font-family:Inter, "Helvetica Neue", Arial; color:var(--text); backgro
   .highlights{grid-template-columns:1fr}
   .animals-grid{grid-template-columns:1fr}
 }
+@media (min-width: 768px) {
+  /* Cards da Home */
+  .card.small,
+  /* Cards de animais */
+  .animal-card,
+  /* Membros da equipe */
+  .member,
+  /* Itens do carrossel */
+  .carousel-item,
+  /* Botões */
+  .btn,
+  /* Dicas */
+  .tip {
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .card.small:hover,
+  .animal-card:hover,
+  .member:hover,
+  .carousel-item:hover,
+  .btn:hover,
+  .tip:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+}
+
 
 /* Accessibility improvements */
 a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outline-offset:2px}
