@@ -121,3 +121,61 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
 
 /* Extra small utility */
 .center{text-align:center}
+.container {
+  width: 90%;
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza conteúdo interno */
+  text-align: center; /* centraliza textos */
+}
+/* Centraliza a hero section */
+.hero-inner {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Centraliza os cards da home */
+.highlights {
+  justify-items: center;
+  text-align: center;
+}
+
+/* Centraliza membros da equipe */
+.team-container {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Centraliza grid dos animais */
+.animals-grid {
+  justify-items: center;
+  text-align: center;
+}
+h1, h2, h3, p, article, section {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card.small,
+.animal-card {
+  margin: 0 auto;
+}
+.carousel-item {
+  margin: 0 auto;
+}
+.contact-form,
+.login-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
