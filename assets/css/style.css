@@ -137,11 +137,7 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   text-align: center;
 }
 
-/* Centraliza os cards da home */
-.highlights {
-  justify-items: center;
-  text-align: center;
-}
+
 
 /* Centraliza membros da equipe */
 .team-container {
