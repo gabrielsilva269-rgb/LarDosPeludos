@@ -204,8 +204,16 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
     right: -10px;
   }
 }
-.highlights{
-  display: flex;
+/* Ajuste especial para os cards de highlights no novo carrossel */
+.highlights-carousel .carousel-item-responsive {
+  min-width: 70%;
+  max-width: 70%;
 }
+
+.highlight-card img {
+  height: 180px !important;
+  object-fit: cover;
+}
+
 
 

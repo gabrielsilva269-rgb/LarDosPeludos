@@ -31,6 +31,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
     track.scrollLeft += getItemWidth();
   });
 })();
+// === GEOLOCALIZAÇÃO PARA VETERINÁRIOS PRÓXIMOS ===
+(function () {
+  const btn = document.getElementById('vetLink');
+  if (!btn) return;
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (!navigator.geolocation) {
+      alert("Geolocalização não suportada no seu navegador.");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const lat = pos.coords.latitude;
+        const lon = pos.coords.longitude;
+
+        const mapsUrl = `https://www.google.com/maps/search/veterinário/@${lat},${lon},15z`;
+
+        window.open(mapsUrl, "_blank");
+      },
+      () => {
+        // se o usuário negar ou der erro → abre pesquisa geral
+        window.open("https://www.google.com/maps/search/veterinário+", "_blank");
+      }
+    );
+  });
+})();
 
 
   // 3) Animals list + search + filter + "adopt" action
