@@ -119,16 +119,7 @@ html,body{font-family:Inter, "Helvetica Neue", Arial; color:var(--text); backgro
 /* Accessibility improvements */
 a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outline-offset:2px}
 
-/* Extra small utility */
-.center{text-align:center}
-.container {
-  width: 90%;
-  max-width: var(--container);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 
-}
 
 /* ==== CARROSSEL RESPONSIVO MOBILE-FIRST ==== */
 
