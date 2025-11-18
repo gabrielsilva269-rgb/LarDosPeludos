@@ -120,12 +120,28 @@ html,body{font-family:Inter, "Helvetica Neue", Arial; color:var(--text); backgro
 a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outline-offset:2px}
 
 /* Extra small utility */
-
+.center{text-align:center}
+.container {
+  width: 90%;
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza conteúdo interno */
+  text-align: center; /* centraliza textos */
+}
 /* Centraliza a hero section */
-
+.hero-inner {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 /* Centraliza os cards da home */
-
+.highlights {
+  justify-items: center;
+  text-align: center;
+}
 
 /* Centraliza membros da equipe */
 .team-container {
@@ -135,8 +151,10 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
 
 /* Centraliza grid dos animais */
 
-
-
+.card.small,
+.animal-card {
+  margin: 0 auto;
+}
 .carousel-item {
   margin: 0 auto;
 }
@@ -147,4 +165,5 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   text-align: center;
   align-items: center;
 }
+
 
