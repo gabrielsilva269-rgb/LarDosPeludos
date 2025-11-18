@@ -127,8 +127,7 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza conteúdo interno */
-  text-align: center; /* centraliza textos */
+
 }
 
 /* ==== CARROSSEL RESPONSIVO MOBILE-FIRST ==== */
