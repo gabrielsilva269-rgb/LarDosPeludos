@@ -130,28 +130,7 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   align-items: center; /* centraliza conteúdo interno */
   text-align: center; /* centraliza textos */
 }
-/* Centraliza a hero section */
 
-
-
-
-/* Centraliza membros da equipe */
-
-
-/* Centraliza grid dos animais */
-
-
-
-.carousel-item {
-  margin: 0 auto;
-}
-.contact-form,
-.login-container {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  align-items: center;
-}
 /* ==== CARROSSEL RESPONSIVO MOBILE-FIRST ==== */
 
 .carousel-responsive {
