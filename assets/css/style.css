@@ -85,7 +85,7 @@ html,body{font-family:Inter, "Helvetica Neue", Arial; color:var(--text); backgro
   .main-nav{display:none;position:fixed;top:60px;right:12px;background:var(--purple);padding:20px;border-radius:8px;z-index:1002}
   .main-nav.show{display:block}
   .main-nav ul{flex-direction:column;gap:12px}
-  .highlights{grid-template-columns:1fr}
+  .highlights{grid-template-columns:1fr;align-items: center;}
   .animals-grid{grid-template-columns:1fr}
 }
 @media (min-width: 768px) {
