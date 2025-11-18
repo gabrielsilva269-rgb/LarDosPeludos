@@ -150,6 +150,10 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
 }
 
 /* Centraliza grid dos animais */
+.animals-grid {
+  justify-items: center;
+  text-align: center;
+}
 
 .card.small,
 .animal-card {
