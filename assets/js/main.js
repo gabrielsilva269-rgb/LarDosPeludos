@@ -9,22 +9,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
     document.querySelectorAll('.main-nav a').forEach(a=> a.addEventListener('click', ()=> nav.classList.remove('show')));
   }
 
-  // 2) Carousel (simple)
-  (function(){
-    const track = document.querySelector('.carousel-track');
-    if(!track) return;
-    const prev = document.querySelector('.carousel-btn.prev');
-    const next = document.querySelector('.carousel-btn.next');
-    let index = 0;
-    const items = track.querySelectorAll('.carousel-item');
-    function show(i){
-      index = (i+items.length)%items.length;
-      track.style.transform = `translateX(-${index * (items[0].offsetWidth + 12)}px)`;
-    }
-    prev?.addEventListener('click', ()=> show(index-1));
-    next?.addEventListener('click', ()=> show(index+1));
-    window.addEventListener('resize', ()=> show(index));
-  })();
+  // ==== CARROSSEL RESPONSIVO ====
+(function () {
+  const track = document.querySelector('.carousel-track-responsive');
+  if (!track) return;
+
+  const btnPrev = document.querySelector('.carousel-btn-resp.prev');
+  const btnNext = document.querySelector('.carousel-btn-resp.next');
+
+  // largura de um item + gap
+  function getItemWidth() {
+    const item = track.querySelector('.carousel-item-responsive');
+    return item ? item.offsetWidth + 16 : 0;
+  }
+
+  btnPrev?.addEventListener('click', () => {
+    track.scrollLeft -= getItemWidth();
+  });
+
+  btnNext?.addEventListener('click', () => {
+    track.scrollLeft += getItemWidth();
+  });
+})();
+
 
   // 3) Animals list + search + filter + "adopt" action
   const animals = [
