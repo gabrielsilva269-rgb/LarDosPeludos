@@ -1,7 +1,7 @@
 /* Lar dos Peludos - style.css */
 :root{
-  --purple:#6a0dad;
-  --purple-2:#8b2be2;
+  --purple:#2745a7;
+  --purple-2:#0a7cff;
   --gray:#e5e5e5;
   --text:#222;
   --muted:#666;
@@ -203,6 +203,9 @@ a:focus, button:focus, input:focus {outline:3px solid rgba(106,13,173,0.18);outl
   .carousel-btn-resp.next {
     right: -10px;
   }
+}
+.highlights{
+  display: flex;
 }
 
 
